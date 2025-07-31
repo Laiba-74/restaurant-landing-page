@@ -7,7 +7,7 @@
 
 :root {
   /* Color Palette */
-  --primary-color: #3C486B;     /* Deep muted blue – modern, elegant */
+  --primary-color: rgba(0, 0, 0, 0.767);     /* Deep muted blue – modern, elegant */
   --secondary-color: #F0A500;   /* Rich mustard gold – warm, inviting */
   --accent-color: #E4572E;      /* Tangy coral – for buttons & highlights */
   --success-color: #4CAF50;     /* Standard green for success */
@@ -35,7 +35,7 @@
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
-}
+} 
 
 body {
   font-family: var(--font-secondary);
