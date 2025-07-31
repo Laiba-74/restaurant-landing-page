@@ -88,3 +88,24 @@ function initializeApp() {
 
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', initializeApp);
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+// Check saved preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+  document.body.classList.add('dark-mode');
+  darkModeToggle.checked = true;
+}
+
+darkModeToggle.addEventListener('change', () => {
+  if (darkModeToggle.checked) {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'enabled');
+  } else {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'disabled');
+  }
+});
+
+

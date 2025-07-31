@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TasteBuds Bistro | Modern Dining Experience</title>
+<meta name="description" content="TasteBuds Bistro offers a cozy ambiance and unforgettable flavors. Discover our handcrafted menu and reserve your table today!">
+<meta name="keywords" content="restaurant, TasteBuds Bistro, food, fine dining, Karachi, best restaurant, chef, menu">
+<meta name="author" content="Laiba Ejaz">
+<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+<!-- Open Graph for better social media previews -->
+<meta property="og:title" content="TasteBuds Bistro | Modern Dining Experience">
+<meta property="og:description" content="Discover delicious meals and unforgettable vibes at TasteBuds Bistro.">
+<meta property="og:image" content="https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=800">
+<meta property="og:url" content="https://tastebudsbistro.netlify.app">
+<meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -154,12 +165,20 @@
             <p>Mon–Fri: 12 PM – 10 PM<br>Sat–Sun: 2 PM – 11 PM</p>
           </div>
         </div>
-        <div class="map-placeholder">
-          <div class="map-content">
-            <h3>📍 Find Us Here</h3>
-            <p>Located in the heart of the city</p>
-          </div>
-        </div>
+<div class="map-placeholder">
+  <h2>Find Us Here</h2>
+  <p>Located in the heart of the city</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924237.7097540089!2d66.4959539227841!3d25.192983650620572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1753985499128!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
       </div>
     </div>
   </section>
@@ -170,18 +189,20 @@
       <div class="section-header">
         <h2>Get in Touch</h2>
       </div>
-      <form class="contact-form" id="contactForm">
-        <div class="form-group">
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+<form name="contact" method="POST" data-netlify="true" class="contact-form" id="contactForm">
+  <input type="hidden" name="form-name" value="contact" />
+  <div class="form-group">
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+  </div>
+  <div class="form-group">
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+  </div>
+  <div class="form-group">
+    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
     </div>
   </section>
 

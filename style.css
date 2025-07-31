@@ -7,7 +7,7 @@
 
 :root {
   /* Color Palette */
-  --primary-color: rgba(0, 0, 0, 0.767);     /* Deep muted blue – modern, elegant */
+  --primary-color: rgba(0, 0, 0, 0.74);     /* Deep muted blue – modern, elegant */
   --secondary-color: #F0A500;   /* Rich mustard gold – warm, inviting */
   --accent-color: #E4572E;      /* Tangy coral – for buttons & highlights */
   --success-color: #4CAF50;     /* Standard green for success */
@@ -448,16 +448,36 @@ p {
   margin-bottom: var(--spacing-sm);
 }
 
+/* CSS */
 .map-placeholder {
-  background-color: var(--primary-color);
-  height: 300px;
+  /* max-width: 800px; */
+  /* margin: 2rem auto; */
+  padding: 1.5rem;
+  background-color: #f9f9f9;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
   text-align: center;
 }
+
+.map-placeholder h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.map-placeholder p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.map-placeholder iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
 
 /* Contact Section */
 .contact {
