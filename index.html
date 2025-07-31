@@ -14,8 +14,11 @@
 <meta property="og:image" content="https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=800">
 <meta property="og:url" content="https://tastebudsbistro.netlify.app">
 <meta name="twitter:card" content="summary_large_image">
-
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <nav class="navbar">
@@ -110,7 +113,7 @@
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials">
+  <!-- <section class="testimonials">
     <div class="container">
       <div class="section-header">
         <h2>What Our Customers Say</h2>
@@ -133,7 +136,39 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="testimonial-carousel">
+      <div class="testimonial active">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Absolutely amazing food! The service is top-notch."</p>
+        <h4>– Sarah M.</h4>
+      </div>
+      <div class="testimonial">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"The ambiance and flavors are unmatched!"</p>
+        <h4>– Ahmed K.</h4>
+      </div>
+      <div class="testimonial">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"My go-to place for family dinners!"</p>
+        <h4>– Ayesha R.</h4>
+      </div>
+    </div>
+
+    <div class="carousel-buttons">
+      <button class="prev">⟨</button>
+      <button class="next">⟩</button>
+    </div>
+  </div>
+</section>
+
 
   <!-- Meet Our Chef -->
   <section class="chef">
@@ -234,5 +269,19 @@
     </div>
   </footer>
   <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 </body>
 </html>

@@ -105,10 +105,11 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #6B3410;
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly darker on hover */
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(139, 69, 19, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 
 .btn-secondary {
   background-color: transparent;
@@ -344,54 +345,87 @@ p {
   color: var(--accent-color);
   float: right;
 }
-
-/* Testimonials */
 .testimonials {
-  padding: var(--spacing-2xl) 0;
   background-color: var(--light-bg);
+  padding: 60px 20px;
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-lg);
+.section-header h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-dark);
+}
+
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
 }
 
 .testimonial {
+  display: none;
   background-color: var(--white);
-  padding: var(--spacing-xl);
-  border-radius: 12px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-normal);
+}
+.testimonial {
   opacity: 0;
-  transform: translateY(30px);
+  transform: scale(0.98);
 }
 
-.testimonial.animate-in {
+.testimonial.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: scale(1);
 }
 
-.testimonial:hover {
-  transform: translateY(-5px);
+.testimonial.active {
+  display: block;
 }
 
-.stars {
-  font-size: 1.5rem;
-  margin-bottom: var(--spacing-sm);
+.testimonial .stars {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
 }
 
 .testimonial p {
   font-style: italic;
-  font-size: 1.1rem;
-  margin-bottom: var(--spacing-md);
+  color: var(--text-light);
+  margin-bottom: 15px;
 }
 
 .testimonial h4 {
-  color: var(--primary-color);
-  margin: 0;
+  color: var(--text-dark);
+  font-weight: 600;
 }
+
+.carousel-buttons {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.carousel-buttons button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly darker on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Chef Section */
 .chef {
