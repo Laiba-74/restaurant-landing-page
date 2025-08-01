@@ -30,7 +30,7 @@ Open index.html in your browser.
 Netlify Deployment <!-- Optional: update with correct URL if needed -->
 
 📷 Screenshots
-![Homepage Screenshot](./images/restuarant.png)
+![Homepage Screenshot](./image/restuarant.png)
 
 👩‍💻 Author
 Laiba Ejaz – GitHub
